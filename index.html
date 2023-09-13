@@ -6,57 +6,55 @@
     <title>Discord Clone</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <section class="relative w-full h-full   overflow-hidden">
 
-        <!-- Nav Bar -->
-        <div class="w-full bg-[#404EED] font-ggSans flex flex-wrap flex-row h-[80px] items-center justify-around relative" >
-            
-            <div class="flex  items-center ">
-                <img class="absolute cursor-pointer flex items-center justify-center  font-ggSans  font-[16px] " src="./images/logo.svg"  alt="">   
-            </div>
-            <div class="flex gap-10 font-[600]   text-[16px] leading-[140%] font-ggSans text-white flex-row ">
-                <a href="#" class="hover:underline transition-all duration-200">Download</a>
-                <a href="#" class="hover:underline transition-all duration-200">Nitro</a>
-                <a href="#" class="hover:underline transition-all duration-200">Discover</a>
-                <a href="#" class="hover:underline transition-all duration-200">Safety</a>
-                <a href="#" class="hover:underline transition-all duration-200">Support</a>
-                <a href="#" class="hover:underline transition-all duration-200">Blog</a>
-                <a href="#" class="hover:underline transition-all duration-200">Careers</a>
-    
-    
-            </div>
+    <!-- Nav Bar -->
+    <div class="font-ggSans relative bg-[#404EED] h-[72px]">
+        <nav class="flex h-[72px] max-w-[1200px] mx-auto items-center justify-between px-7"> 
             <div >
-                <button class="hover:text-[#404EEd]  bg-white p-2 text-[#2c2f33] 
-                rounded-full font-[500] transition-all duration-200 flex text-[14px] px-4">Login</button>
+                <img src="./images/logo.svg"  alt="">
             </div>
-        </div>
+            <div class="flex w-[600px] mx-auto justify-between  font-[16px] gap-8  text-white">
+                <a href="#" class="capitalize hover:underline ">download</a>
+                <a href="#" class="capitalize hover:underline">Nitro</a>
+                <a href="#" class="capitalize hover:underline">discover</a>
+                <a href="#" class="capitalize hover:underline">safety</a>
+                <a href="#" class="capitalize hover:underline">support</a>
+                <a href="#" class="capitalize hover:underline">blog</a>
+                <a href="#" class="capitalize hover:underline">careers</a>
+            </div>
+            <div>
+                <button class="text-[#2c2f33] px-4 p-2  bg-white rounded-full hover:text-[#404EED] hover:shadow-xl text-[14px]">Login</button>
+            </div>
+        </nav>
+    </div>
 
+    <!-- Hero Section -->
+    <div class="bg-[#404EED] relative -mt-1 w-full overflow-x-hidden">
+        <img src="./images/Image0.svg" 
+        class="z-5 absolute  scale-x-[1.7] scale-y-[1.7] bottom-[120px]" alt="" />
+        <!--Right Image-->
+        <img src="./images/Image1.svg" class=" -right-72 bottom-0 absolute z-10" alt="" />
+        <!--Left Image-->
+        <img src="./images/Image2.svg" class=" bottom-0 -left-80  z-10 absolute" alt="" />
+        <div class="flex flex-col  px-0 mx-auto max-w-[1200px] justify-center items-center text-[#fff] pt-[50px] h-[555px] relative  gap-5">
+            <h1 class="uppercase font-['GintoNord'] text-[56px] font-[800]  ">imagine a place...</h1>
+            <p class="font-[400] font-['gg sans'] text-[20px] leading-[32.5px] z-20 w-[70%] text-center ">...where you can belong to a school club, a gaming group, or a worldwide art community. <br> Where just you and a handful of friends can spend time together. A place that makes it easy <br> to talk every day and hang out more often.</p>
 
-        <!-- Hero Section -->
-        <div class="relative h-[500px] w-full  bg-[url(./images/Image2.svg),_url(./images/Image3.svg)]  bg-no-repeat bg-[left_bottom_0rem,right_bottom_0rem]  bg-[#404EED] text-white ">
-            <div class="flex flex-col text-center justify-center items-center mx-auto ">
-                <h1 class=" font-ggSans font-extrabold text-[56px] pt-[100px] ">IMAGINE A PLACE...</h1>
-            <p class="mt-[40px]  text-[20px] w-7/12 leading-[1.625]">...where you can belong to a school club, a gaming group, or a worldwide art community. Where just you and a handful of friends can spend time together. A place tha t makes it easy to talk every day and hang out more often.</p>
-            <div class="flex gap-10 flex-wrap pt-[1.625rem]">
-                <button class="hover:text-[#404EED]  rounded-full bg-white text-black p-4 ">
-                    <i></i>
+            <div class="flex pt-6  gap-10  font-[500] justify-center pb-20 ">
+                <button class="bg-white p-4 px-7 hover:text-[#404EED] hover:shadow-xl rounded-full text-black ">
                     <p>Download for Mac</p>
                 </button>
-                <button  class="bg-black hover:text-white rounded-full p-4 hover:bg-slate-800">
-                    <b>
-                        Open discord in your browser
-                    </b>
+                <button class="bg-[#23272a]  p-4 px-7 text-white rounded-full hover:bg-slate-700 hover:shadow-xl">
+                    <p>Open Discord in your browser</p>
                 </button>
                 
+                
             </div>
-            
-            </div>
-            
-            
         </div>
-        
-    </section>
+
+    </div>
 </body>
 </html>
